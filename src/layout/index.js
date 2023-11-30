@@ -27,7 +27,7 @@ export default function Layout({ title, children }) {
       </Head>
       <Header />
       <DropBoxes />
-      <main className=" overflow-hidden">{children}</main>
+      <main className=" overflow-hidden px-10">{children}</main>
     </>
   );
 }
