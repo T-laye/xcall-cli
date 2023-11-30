@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <Layout>
       <section className="container mx-auto pt-14 lg:pt-24 h-[100vh] lg:h-[100vh] 2xl:h-[100vh] flex items-center lg:items-start lg:justify-center justify-start flex-col lg:flex-row ">
-        <div className="lg:w-1/2 pt-16 md:pt-24 flex justify-cente flex-col mb-0 lg:mb-0">
+        <div className="lg:w-1/2 pt-20 md:pt-24 flex justify-cente flex-col mb-0 lg:mb-0">
           <div className="flex flex-col items-center lg:items-start ">
             <h1 className="md:text-7xl text-5xl font-bold text-primary  ">Validator</h1>
             <div className="lg:w-2/3 flex mt-2 justify-center">
