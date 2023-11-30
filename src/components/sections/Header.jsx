@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import close from "public/icons/cancel_btn.svg";
+import { IoCloseCircleOutline } from "react-icons/io5";
 
 export default function Header() {
   const [openNav, setOpenNav] = useState(false);
@@ -82,27 +82,20 @@ export default function Header() {
                 openNav
                   ? "h-screen duration-500 fixed "
                   : "duration-500 h-0 absolute"
-              } bg-[#150e2895]   z-[100] left-0 top-0 bottom-0 right-0`}
+              } bg-[#00000085] backdrop-blur   z-[100] left-0 top-0 bottom-0 right-0`}
             >
               <div
                 className={`${
                   openNav
                     ? "translate-y-0 duration-500 opacity-100"
                     : "duration-300 -translate-y-full opacity-0"
-                } flex flex-col  bg-[#150e28]  h-[55vh]   px-10 pt-10`}
+                } flex flex-col  bg-[#00000095] backdrop-blur  h-[55vh]   px-10 pt-10`}
               >
                 <div
                   onClick={handleNav}
                   className=" w-[28px] place-self-end mx-4 cursor-pointer"
                 >
-                  <Image
-                    src={close}
-                    width={23}
-                    height={23}
-                    alt=" "
-                    // onClick={handleImageClick}
-                    className=" object-center w-full  object-contain "
-                  />
+                  <IoCloseCircleOutline size={32} />
                 </div>
                 <ul className="flex flex-col space-y-2.5 text-[18px] font-medium mt-14 bggray-800 justify-center place-self-center  w-full items-start ">
                   <li className="link ">
