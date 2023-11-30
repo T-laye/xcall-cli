@@ -69,7 +69,7 @@ export default function Header() {
             </ul>
           </nav>
         </div>
-        <div onClick={handleNav} className=" cursor-pointer lg:hidden">
+        <div onClick={handleNav} className="-mr-20 cursor-pointer lg:hidden">
           <FiMenu size={24} className="" />
         </div>
 
