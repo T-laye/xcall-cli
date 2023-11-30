@@ -69,14 +69,9 @@ export default function Header() {
             </ul>
           </nav>
         </div>
-        <div
-          onClick={handleNav}
-          className=" cursor-pointer lg:hidden"
-        >
-        </div>
+        <div onClick={handleNav} className=" cursor-pointer lg:hidden">
           <FiMenu size={24} className="" />
-
-
+        </div>
 
         {/* Mobile Navbar */}
         <nav className="lg:hidden ">

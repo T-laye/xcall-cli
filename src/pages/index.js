@@ -33,7 +33,7 @@ export default function Home() {
             alt="validation"
             height={1000}
             width={1000}
-            className="object-contain w-full h-full lg:mb-20 opacity-75 lg:opacity-100"
+            className="object-cover w-full h-full lg:mb-20 opacity-75 lg:opacity-100"
           />
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-primary mix-blend-darken ">
             {" "}
