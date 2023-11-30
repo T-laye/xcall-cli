@@ -16,7 +16,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="lg:w-3/4 w-full px-4 mt-5">
+            <div className="lg:w-3/4 w-full  mt-5">
               <input type="text" />
             </div>
           </div>
