@@ -38,7 +38,7 @@ export default function Header() {
       //   className="bg-primar z-10  h-[8vh] lg:h-[10vh] border-b border-b-[#FFFFFF20] shadow-sm backdrop-blur "
     >
       <div className="container mx-auto bgblue-200  flex justify-between h-full items-center">
-        <div className="">
+        <div className="ml-4 md:ml-0">
           <div className="h-14 w-14">
             <Image
               src={vlogo}
