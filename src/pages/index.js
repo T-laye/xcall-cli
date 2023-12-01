@@ -1,5 +1,6 @@
 import Layout from "@/layout";
 import Image from "next/image";
+import validate from "public/validation-removebg.png";
 
 export default function Home() {
   return (
@@ -29,17 +30,19 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="lg:w-1/2 bg-green-30 h-full flex relative items-center justify-center overflow-hiden object-cover ">
+        <div className="lg:w-1/2 bg-green-30 h-full flex relative items-center justify-center overflow-hiden object-contain ">
           <Image
-            src="https://cdn.dribbble.com/users/1373613/screenshots/5510801/media/adf3f3a5acf468eb1a2e23849ddbe4ec.gif"
+            // src="https://cdn.dribbble.com/users/1373613/screenshots/5510801/media/adf3f3a5acf468eb1a2e23849ddbe4ec.gif"
+            src={validate}
             alt="validation"
             height={1000}
             width={1000}
-            className="object-cover w-full h-full lg:mb-20 opacity-75 lg:opacity-100"
+            className="object-contain w-full h-full lg:mb-20 opacity-85 lg:opacity-100"
           />
-          <div className="absolute top-0 left-0 right-0 bottom-0 bg-primary mix-blend-darken ">
-            {" "}
-          </div>
+
+          {/* <div className="absolute top-0 left-0 right-0 bottom-0 bg-primary mix-blend-darken ">
+            
+          </div> */}
         </div>
       </section>
     </Layout>
