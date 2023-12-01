@@ -5,6 +5,7 @@ import { FiMenu } from "react-icons/fi";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { IoCloseCircleOutline } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa6";
 
 export default function Header() {
   const [openNav, setOpenNav] = useState(false);
@@ -45,25 +46,23 @@ export default function Header() {
             data-aos-delay="100"
             className="hidden lg:block mr-10"
           >
-            <ul className="flex space-x-10 text-base">
-              <li className="link ">
-                <Link href="/#overview">Overview</Link>
+            <ul className="flex space-x-10 items-center text-base 2xl:text-xl">
+              <li
+                className={`link ${
+                  asPath === "/" ? "textprimary fontsemibold" : ""
+                } `}
+              >
+                {/* <Link href="/">Validator</Link> */}
               </li>
               <li className="link ">
-                <Link href="/#how">How to Buy</Link>
-              </li>
-              <li className="link ">
-                <Link href="/#tokenomics">Tokenomics</Link>
-              </li>
-              <li className="link ">
-                <Link href="/#roadMap">Road Map</Link>
-              </li>
-              <li className="link ">
-                <Link
-                  target="_blank"
-                  href="https://dexscreener.com/goerli/0x196483e5de44074951b10cf802331d40b2346db5"
-                >
-                  Chart
+                <Link href="/#how">
+                  {" "}
+                  <button className="flex items-center space-x-2 bg-primary py-2 px-4 text-white btn">
+                    <span>Documentation</span>
+                    <span>
+                      <FaGithub size={24} />
+                    </span>
+                  </button>
                 </Link>
               </li>
             </ul>
@@ -82,24 +81,28 @@ export default function Header() {
                 openNav
                   ? "h-screen duration-500 fixed "
                   : "duration-500 h-0 absolute"
-              } bg-[#00000085] backdrop-blur   z-[100] left-0 top-0 bottom-0 right-0`}
+              } bg-[#ffffff85] backdrop-blur   z-[100] left-0 top-0 bottom-0 right-0`}
             >
               <div
                 className={`${
                   openNav
                     ? "translate-y-0 duration-500 opacity-100"
                     : "duration-300 -translate-y-full opacity-0"
-                } flex flex-col  bg-[#00000095] backdrop-blur  h-[55vh]   px-10 pt-10`}
+                } flex flex-col  bg-[#ffffff] backdrop-blur  h-[55vh]   px-10 pt-10`}
               >
                 <div
                   onClick={handleNav}
                   className=" w-[28px] place-self-end mx-4 cursor-pointer"
                 >
-                  <IoCloseCircleOutline size={32} />
+                  <IoCloseCircleOutline size={32} className="text-primary" />
                 </div>
                 <ul className="flex flex-col space-y-2.5 text-[18px] font-medium mt-14 bggray-800 justify-center place-self-center  w-full items-start ">
-                  <li className="link ">
-                    <Link href="/#overview">Overview</Link>
+                  <li
+                    className={`link ${
+                      asPath === "/" ? "text-primary font-semibold" : ""
+                    } `}
+                  >
+                    <Link href="/">Validator</Link>
                   </li>
                   <li className="link ">
                     <Link href="/#how">How to Buy</Link>

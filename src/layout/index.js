@@ -26,7 +26,7 @@ export default function Layout({ title, children }) {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <Header />
-      <DropBoxes />
+      {/* <DropBoxes /> */}
       <main className=" overflow-hidden px-10">{children}</main>
     </>
   );
