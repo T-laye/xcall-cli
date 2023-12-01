@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../../public/xcall.svg";
+import vlogo from "public/vedi_logo.svg";
 import React, { useEffect, useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import Link from "next/link";
@@ -38,24 +38,27 @@ export default function Header() {
       //   className="bg-primar z-10  h-[8vh] lg:h-[10vh] border-b border-b-[#FFFFFF20] shadow-sm backdrop-blur "
     >
       <div className="container mx-auto bgblue-200  flex justify-between h-full items-center">
-        <div className="text-primary font-bold text-2xl">W3 Partners</div>
+        <div className="">
+          <div className="h-14 w-14">
+            <Image
+              src={vlogo}
+              alt="xcall"
+              width={100}
+              height={100}
+              className="h-full"
+            />
+          </div>
+        </div>
         <div>
           {/* Navbar */}
           <nav
-            data-aos="flip-down"
-            data-aos-delay="100"
+            // data-aos="flip-down"
+            // data-aos-delay="100"
             className="hidden lg:block mr-10"
           >
             <ul className="flex space-x-10 items-center text-base 2xl:text-xl">
-              <li
-                className={`link ${
-                  asPath === "/" ? "textprimary fontsemibold" : ""
-                } `}
-              >
-                {/* <Link href="/">Validator</Link> */}
-              </li>
               <li className="link ">
-                <Link href="/#how">
+                <Link href="https://github.com/The-True-Hooha/xCall-cli">
                   {" "}
                   <button className="flex items-center space-x-2 bg-primary py-2 px-4 text-white btn">
                     <span>Documentation</span>
@@ -94,31 +97,18 @@ export default function Header() {
                   onClick={handleNav}
                   className=" w-[28px] place-self-end mx-4 cursor-pointer"
                 >
-                  <IoCloseCircleOutline size={32} className="text-primary" />
+                  <IoCloseCircleOutline size={32} className="text-gray-600" />
                 </div>
                 <ul className="flex flex-col space-y-2.5 text-[18px] font-medium mt-14 bggray-800 justify-center place-self-center  w-full items-start ">
-                  <li
-                    className={`link ${
-                      asPath === "/" ? "text-primary font-semibold" : ""
-                    } `}
-                  >
-                    <Link href="/">Validator</Link>
-                  </li>
                   <li className="link ">
-                    <Link href="/#how">How to Buy</Link>
-                  </li>
-                  <li className="link ">
-                    <Link href="/#tokenomics">Tokenomics</Link>
-                  </li>
-                  <li className="link ">
-                    <Link href="/#roadmap">Road Map</Link>
-                  </li>
-                  <li className="link ">
-                    <Link
-                      target="_blank"
-                      href="https://dexscreener.com/goerli/0x196483e5de44074951b10cf802331d40b2346db5"
-                    >
-                      Chart
+                    <Link href="https://github.com/The-True-Hooha/xCall-cli">
+                      {" "}
+                      <button className="flex items-center space-x-2   text-primary ">
+                        <span className="font-semibold">Documentation</span>
+                        <span>
+                          <FaGithub size={24} />
+                        </span>
+                      </button>
                     </Link>
                   </li>
                 </ul>
